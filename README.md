@@ -1,8 +1,11 @@
-# Zoom Video SDK recordings to Google Cloud Storage
+# Sample app: Zoom Video SDK recordings to Google Cloud Storage
 
-Archive completed Zoom Video SDK cloud-recording artifacts in a private Google Cloud Storage bucket.
+This repository is a **sample application** that demonstrates how to archive completed Zoom Video SDK cloud-recording artifacts in a private Google Cloud Storage bucket.
 
-The service verifies Zoom webhooks, creates one durable Cloud Task per downloadable artifact, and streams each file from Zoom directly into GCS. Recordings are never buffered on local disk.
+> [!IMPORTANT]
+> This project is provided as an implementation example, not as a production-ready or officially supported service. Review and adapt its security, reliability, observability, compliance, cost, and operational settings before using it in your own environment.
+
+The sample verifies Zoom webhooks, creates one durable Cloud Task per downloadable artifact, and streams each file from Zoom directly into GCS. Recordings are never buffered on local disk.
 
 ## Features
 
