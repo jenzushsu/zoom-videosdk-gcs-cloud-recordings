@@ -1,0 +1,42 @@
+{
+  "name": "zoom-videosdk-gcs-cloud-recordings",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Durably copy Zoom Video SDK cloud recording artifacts to Google Cloud Storage",
+  "license": "ISC",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm test && npm run build",
+    "dev": "tsx watch src/server.ts",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "lint": "eslint .",
+    "start": "node dist/server.js",
+    "test": "vitest run --coverage",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^8.0.0",
+    "@google-cloud/tasks": "^7.0.0",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.17.2",
+    "@types/supertest": "^6.0.3",
+    "@vitest/coverage-v8": "^3.2.4",
+    "eslint": "^9.33.0",
+    "prettier": "^3.6.2",
+    "supertest": "^7.1.4",
+    "tsx": "^4.20.4",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.39.1",
+    "vitest": "^3.2.4"
+  }
+}
