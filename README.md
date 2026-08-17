@@ -48,9 +48,9 @@ accounts/{account_id}/sessions/{encoded_session_id}/{category}/{file_id}.{extens
 ## Requirements
 
 - Node.js 22 or later
-- A Zoom Video SDK app with cloud recording enabled
+- A [Zoom Build Platform account](https://developers.zoom.us/docs/build/account/) with cloud recording enabled
 - A Google Cloud project with billing enabled
-- The Google Cloud CLI for deployment
+- Google Cloud CLI for deployment
 - Application Default Credentials for local Google Cloud access
 
 ## Local development
